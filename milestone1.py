@@ -7,3 +7,8 @@ def create_genre(songs):
     genre = ""
     song_number = random.randint(0, 80)
 #Shown above is my attempt at making sure my generator would produce a random output from the list above. The numbers in the parentheses refer to the list's start and end so that the range would randomly select songs between those points. "Therefore I Am by Billie Eilish" is 0, which is the starting point while "Don't Take Me Home by Tori Kelly" is the ending point at 80.
+    for item in range(0, song_number):
+        song_to_pop = random.randint(0, len(songs) - 1)
+        genre += songs.pop(song_to_pop) + " "
+#The for loop shown above is using the pop method to keep the list from iterating duplicates of songs so that the generator would not continuously shows the same songs repeatedly. Hopefully, each song would be able to be seen at least once.
+    return genre
