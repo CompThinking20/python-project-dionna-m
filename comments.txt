@@ -1,0 +1,2 @@
+MILESTONE 2 COMMENTS
+Your code didn't run because you have a stray * before your list names. I assume the code would run if you would take that out. Other than that, i think you're on the right track here. The recommendation I would make for the final submission: user input! Let the user decide what kind of playlist they want. There will actually be less typing for you involved if you do this!

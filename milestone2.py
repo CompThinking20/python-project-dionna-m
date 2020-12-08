@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #I will be creating a function for my project, which is to make a 2020 random playlist generator. The function I will be using is "genre," which will define the types of songs for my generator. I intend for the genre function to be defined by music attributes, such as Pop, Rock, Hip Hop, R&B, ect. Its argument would be "songs" since I will have specific lists of songs that categorize each genre. Likely, the return value would be "songs".
 
 #Below are a few lists containing songs that categorize each genre for my generator. More will be filled out at a later time.
