@@ -12,3 +12,7 @@ def create_genre(songs):
         genre += songs.pop(song_to_pop) + " "
 #The for loop shown above is using the pop method to keep the list from iterating duplicates of songs so that the generator would not continuously shows the same songs repeatedly. Hopefully, each song would be able to be seen at least once.
     return genre
+
+print create_genre(pop)
+print(*pop, sep = "\n")
+#The print statement above is to ensure that each song from the "pop" list would print on a new line instead of being separated by commas and spaces. This would likely be more reminiscent of a genre playlist.
