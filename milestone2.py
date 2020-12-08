@@ -36,3 +36,39 @@ def create_genre(songs):
 print create_genre(pop)
 print(*pop, sep = "\n")
 #The print statement above is to ensure that each song from the "pop" list would print on a new line instead of being separated by commas and spaces. This would likely be more reminiscent of a genre playlist.
+
+def create_genre(songs):
+    genre = ""
+    song_number = random.randint(0, 89)
+    for item in range(0, song_number):
+        song_to_pop = random.randint(0, len(songs) - 1)
+        genre += songs.pop(song_to_pop) + " "
+    return genre
+#The function above and the ones following are repeats of the first function except with adjustments to the range each list contains since there is not the same number of songs contained in the filled out lists at the moment. I will fix this later though.
+
+print create_genre(kpop)
+print(*kpop, sep = "\n")
+
+def create_genre(songs):
+    genre = ""
+    song_number = random.randint(0, 71)
+    for item in range(0, song_number):
+        song_to_pop = random.randint(0, len(songs) - 1)
+        genre += songs.pop(song_to_pop) + " "
+    return genre
+
+print create_genre(r&b)
+print(*r&b, sep = "\n")
+
+def create_genre(songs):
+    genre = ""
+    song_number = random.randint(0, 78)
+    for item in range(0, song_number):
+        song_to_pop = random.randint(0, len(songs) - 1)
+        genre += songs.pop(song_to_pop) + " "
+    return genre
+
+print create_genre(hip-hop)
+print(*hip-hop, sep = "\n")
+
+#Overall notes, I need some clarification on how each genre list could be selected and show songs from a single list. What I'm hoping is that through this pull method, each list would print songs from that specific list instead of combining songs from all of my lists together. Also, I would like to limit the number of songs printed at an instance to 10 songs instead of all the songs randomly printed out in the terminal. I'm unsure if it is even priting since repl.it won't let me sign in from GitHub.
